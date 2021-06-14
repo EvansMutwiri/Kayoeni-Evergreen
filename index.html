@@ -20,29 +20,112 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="shortcut icon" href="images/logo-icon.svg" />
     <title>Kaoyeni Evergreen</title>
   </head>
   <body>
-    <div class="container">
-       <!-- navigation bar -->
-    
-    <nav>
-      <img src="images/Kaoyeni Logo Website 1.svg" alt="" />
-      <ul>
-        <li>Why Kaoyeni evergreen</li>
-        <li>Site Plan</li>
-        <li>Pricing</li>
-        <li>Gallery</li>
-        <li>Location</li>
-        <li>Contacts</li>
-        <li>+ 254 724 257 026</li>
-      </ul>
-    </nav>
+    <div class="container container-fluid">
+      <!-- navigation bar -->
+
+      <!-- <div class="nav-container">
+        <div class="wrapper">
+          <nav>
+            <div class="logo">
+              <a href="#"><img src="images/Kaoyeni Logo Website 1.svg" alt="kaoyeni logo"></a>
+            </div>
+            <ul class="nav-items">
+              <li class="why-kaoyeni" >
+                <a href="#">Why Kaoyeni Evergreen</a>
+              </li>
+              <li>
+                <a href="#">Site Plan</a>
+              </li>
+              <li>
+                <a href="#">Pricing</a>
+              </li>
+              <li>
+                <a href="#">Location</a>
+              </li>
+              <li>
+                <a href="#">Contacts</a>
+              </li>
+              <li class="contact-number" >
+                <a href="#">+254 724 257 026</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- <nav class="nav nav-bar navbar navbar-default d-inline">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li><a href="#"><img src="images/Kaoyeni Logo Website 1.svg" alt="" height="100px" /></a></li>
+            <li class="active"><a href="#">Why Kaoyeni evergreen</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">+ 254 724 257 026</a></li>
+          </ul>
+        </div>
+      </nav> -->
+      -->
+
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light"
+      >
+        <a class="navbar-brand" href="#"
+          ><img src="images/Kaoyeni Logo Website 1.svg" alt="kaoyeni-evergreen"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav float-right">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Why Kayoeni Evergreen <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Site Plan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Location</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">+ 254 724 257 026</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <!-- add bg image -->
 
       <div class="header">
+        <div><img src="/images/header.png" alt="" /></div>
         <div class="two-acre-plots">
           <p>
             2 ACRE PLOTS FOR SALE <br />
@@ -56,19 +139,28 @@
       </div>
 
       <!-- Why Kaoyeni Evergreen -->
-      <div class="Kayoeni-cards">
+
+      <div class="cards-container">
         <h1>Why Kaoyeni Evergreen</h1>
-        <div class="great-potential">
-          <h2>Ready Title Deeds</h2>
-          <a href="#">Learn More &#8594;</a>
-        </div>
-        <div class="great-potential">
-          <h2>Great potential into further subdivision</h2>
-          <a href="#">Learn More &#8594;</a>
-        </div>
-        <div class="great-potential">
-          <h2>Special discount for Chamas/Saccos</h2>
-          <a href="#">Learn More &#8594;</a>
+        <div class="row Kayoeni-cards">
+          <div class="col-md-4 ready-title-deeds">
+            <h2>Ready Title Deeds</h2>
+            <a href="#">Learn More &#8594;</a>
+          </div>
+          <div class="col-md-4 great-potential">
+            <h2>
+              Great potential into <br />
+              further subdivision
+            </h2>
+            <a href="#">Learn More &#8594;</a>
+          </div>
+          <div class="col-md-4 special-discount">
+            <h2>
+              Special discount for <br />
+              Chamas/Saccos
+            </h2>
+            <a href="#">Learn More &#8594;</a>
+          </div>
         </div>
       </div>
 
@@ -77,7 +169,8 @@
       <div class="site-plan">
         <h1 class="site-plan">Site Plan</h1>
         <p>Unique 26 - 2 Acre residential plots near Malindi airport.</p>
-        <img class="img-fluid"
+        <img
+          class="img-fluid"
           src="images/Kayoeni site plan.png"
           alt="Kayoeni Evergreen Site plan"
         />
@@ -88,12 +181,19 @@
       <div class="pricing">
         <h1>Pricing</h1>
         <div class="phase1">
-          <h2>Phase 1</h2>
-          <p>
-            First phase consist of plots A - G.<br />
-            2 acres for each plot. <br />
-            <span class="pricing-btn">KES 2.3M/ACRE</span>
-          </p>
+          <img
+            class="col-md-6 float-md-end mb-3 ms-md-3"
+            src="images/Site-plan.png"
+            alt="site-pricin"
+          />
+          <div class="pricingfloat">
+            <h2>Phase 1</h2>
+            <p>
+              First phase consist of plots A - G.<br />
+              2 acres for each plot. <br />
+              <span class="pricing-btn">KES 2.3M/ACRE</span>
+            </p>
+          </div>
         </div>
       </div>
 
@@ -193,7 +293,7 @@
 
       <!-- location map -->
 
-      <h1>Location Map</h1>
+      <!-- <h1>Location Map</h1>
       <div class="map">
         <div id="googleMap" style="width: 100%; height: 600px"><div>
 
@@ -211,11 +311,23 @@
         </script>
 
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSWZZ9iTKYzJRu3wFM-Px4h7aS--D1RQA&callback=myMap"></script>
-      </div>
-      
+      </div> -->
 
-       <!-- site footer -->
-      
+      <div id="map-container" class="z-depth-1-half map-container">
+        <h1>Location map</h1>
+        <iframe
+          class="site-location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.4608165887653!2d40.08127931475746!3d-3.2349089976447862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zM8KwMTQnMDUuNyJTIDQwwrAwNScwMC41IkU!5e0!3m2!1sen!2ske!4v1623653157954!5m2!1sen!2ske"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <!-- site footer -->
+
       <div class="site-footer">
         <div class="Ryden-International">
           <h3><strong>TALK TO US</strong></h3>

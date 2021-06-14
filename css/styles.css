@@ -1,0 +1,108 @@
+* {
+  scroll-behavior: smooth;
+  list-style: none;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* navigation bar*/
+
+.nav-container {
+  background-color: rgba(196, 196, 196, 0.123);
+  width: 1366px;
+  height: 105px;
+  left: 0px;
+  top: 0px;
+}
+
+.wrapper {
+  max-width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav .logo {
+  /* position: absolute; */
+  width: 211px;
+  height: 108px;
+  left: 64px;
+  top: 5px;
+}
+
+.nav-items li {
+  margin-right: 100px;
+}
+
+.contact-number {
+  font-weight: 100;
+}
+
+.nav-items li:nth-last-of-type(1) {
+  margin: 0;
+}
+
+.nav-items li a {
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.why-kaoyeni {
+  border-bottom: 3px solid #97c73f;
+  padding-bottom: 3px;
+}
+
+.header {
+  height: 621px;
+  /* position: absolute; */
+  /* background-image: url(/images/header.png); */
+  background-repeat: no-repeat;
+}
+
+.header .two-acre-plots {
+  position: absolute;
+  padding: 30px;
+  background-color: rgba(151, 199, 63, 0.78);
+  color: #ffff;
+  width: 386px;
+  top: 50%;
+  right: 56%;
+}
+
+.Kayoeni-cards {
+  display: flex;
+}
+
+.ready-title-deeds {
+  padding: 0%;
+  background-image: url(/images/Rectangle\ 5.png);
+  background-position: center;
+  border: 1px black solid;
+  height: 450px;
+}
+
+.great-potential {
+  background-image: url(/images/Rectangle\ 8.png);
+  background-position: center;
+  border: 1px black solid;
+  height: 450px;
+}
+
+.special-discount {
+  background-image: url(/images/Rectangle\ 7.png);
+  background-position: center;
+  border: 1px black solid;
+  height: 450px;
+}
+.phase1 {
+  border: 1px black solid;
+  display: flex;
+}
