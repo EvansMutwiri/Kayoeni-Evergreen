@@ -28,57 +28,11 @@
     <div class="container container-fluid">
       <!-- navigation bar -->
 
-      <!-- <div class="nav-container">
-        <div class="wrapper">
-          <nav>
-            <div class="logo">
-              <a href="#"><img src="images/Kaoyeni Logo Website 1.svg" alt="kaoyeni logo"></a>
-            </div>
-            <ul class="nav-items">
-              <li class="why-kaoyeni" >
-                <a href="#">Why Kaoyeni Evergreen</a>
-              </li>
-              <li>
-                <a href="#">Site Plan</a>
-              </li>
-              <li>
-                <a href="#">Pricing</a>
-              </li>
-              <li>
-                <a href="#">Location</a>
-              </li>
-              <li>
-                <a href="#">Contacts</a>
-              </li>
-              <li class="contact-number" >
-                <a href="#">+254 724 257 026</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-
-      <!-- <nav class="nav nav-bar navbar navbar-default d-inline">
-        <div class="container-fluid">
-          <ul class="nav navbar-nav">
-            <li><a href="#"><img src="images/Kaoyeni Logo Website 1.svg" alt="" height="100px" /></a></li>
-            <li class="active"><a href="#">Why Kaoyeni evergreen</a></li>
-            <li><a href="#">Site Plan</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Location</a></li>
-            <li><a href="#">Contacts</a></li>
-            <li><a href="#">+ 254 724 257 026</a></li>
-          </ul>
-        </div>
-      </nav> -->
-      -->
-
       <nav
         class="navbar navbar-expand-lg navbar-light bg-light"
       >
         <a class="navbar-brand" href="#"
-          ><img src="images/Kaoyeni Logo Website 1.svg" alt="kaoyeni-evergreen"
+          ><img src="images/Kaoyeni Logo Website 1.svg" alt="kaoyeni-evergreen" style="position:absolute; top:0; left:0;"
         /></a>
         <button
           class="navbar-toggler"
@@ -95,10 +49,9 @@
           class="collapse navbar-collapse"
           id="navbarNav"
         >
-          <ul class="navbar-nav float-right">
+          <ul class="navbar-nav float-md-end" style="font-size: 15px;">
             <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Why Kayoeni Evergreen <span class="sr-only">(current)</span></a
+              <a class="nav-link" href="#"><span style="border-bottom: 3px solid #97c73f; padding-bottom: 3px;">Why Kayoeni Evergreen</span> <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
@@ -125,17 +78,28 @@
       <!-- add bg image -->
 
       <div class="header">
-        <div><img src="/images/header.png" alt="" /></div>
-        <div class="two-acre-plots">
+        <div><img class="header-image" src="/images/header.png" alt="" /></div>
+        <div class="two-acre-plots">     
           <p>
-            2 ACRE PLOTS FOR SALE <br />
-            <span class="header-text">NEAR MALINDI AIRPORT</span>
+            2 ACRE PLOTS FOR SALE <br>
+            <span style="position: absolute;" class="header-text">NEAR MALINDI AIRPORT</span>
           </p>
         </div>
 
         <!-- Contact form -->
 
-        <div class="contact-form"></div>
+        <div class="form-group" style="background-color: #97C73F; padding: 20px; position: absolute; right: 80px; bottom: auto; top: 0;">
+          <form action="https://formsubmit.co/83c1218e73c5704e1ffd23e905dce8c7" method="POST">
+            <h1>KAOYENI<br>EVERGREEN</h1>
+            <label for="name">FULL NAMES</label> <br>
+            <input type="text" name="name" placeholder="Name" class="form-control" required> <br>
+            <label for="phone">PHONE NUMBER</label> <br><br>
+            <input type="text" name="phone" placeholder="Phone"class="form-control"><br>
+            <label for="email">EMAIL ADDRESS</label> <br>
+            <input type="email" name="email" placeholder="Email" class="form-control" required><br>
+            <button type="submit" style="background-color: #FF0000; color: #fff;"class="btn btn-primary btn-lg btn-block" >GET NOTIFIED</button>
+       </form>  
+        </div>
       </div>
 
       <!-- Why Kaoyeni Evergreen -->
@@ -183,7 +147,7 @@
         <div class="phase1">
           <img
             class="col-md-6 float-md-end mb-3 ms-md-3"
-            src="images/Site-plan.png"
+            src="images/Site-plan.png" style="height: auto; width: 50%;"
             alt="site-pricin"
           />
           <div class="pricingfloat">

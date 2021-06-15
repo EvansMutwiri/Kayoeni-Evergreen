@@ -42,6 +42,21 @@ nav .logo {
   margin-right: 100px;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
 .contact-number {
   font-weight: 100;
 }
@@ -61,48 +76,52 @@ nav .logo {
 }
 
 .header {
-  height: 621px;
-  /* position: absolute; */
-  /* background-image: url(/images/header.png); */
-  background-repeat: no-repeat;
+  position: relative;
 }
 
+.header-image {
+  height: auto;
+  width: 100%;
+}
 .header .two-acre-plots {
   position: absolute;
-  padding: 30px;
+  padding: 20px;
   background-color: rgba(151, 199, 63, 0.78);
   color: #ffff;
-  width: 386px;
-  top: 50%;
-  right: 56%;
+  /* width: 386px; */
+  left: 10px;
+  bottom: 30px;
 }
 
 .Kayoeni-cards {
   display: flex;
+  height: 480px;
 }
 
 .ready-title-deeds {
-  padding: 0%;
   background-image: url(/images/Rectangle\ 5.png);
   background-position: center;
-  border: 1px black solid;
-  height: 450px;
+  text-align: center;
+  /* border: 1px black solid; */
+  /* height: 460px; */
 }
 
 .great-potential {
   background-image: url(/images/Rectangle\ 8.png);
   background-position: center;
-  border: 1px black solid;
-  height: 450px;
+  text-align: center;
+  /* border: 1px black solid; */
+  /* height: 450px; */
 }
 
 .special-discount {
   background-image: url(/images/Rectangle\ 7.png);
   background-position: center;
-  border: 1px black solid;
-  height: 450px;
+  text-align: center;
+  /* border: 1px black solid; */
+  /* height: 450px; */
 }
 .phase1 {
-  border: 1px black solid;
+  /* border: 1px black solid; */
   display: flex;
 }
