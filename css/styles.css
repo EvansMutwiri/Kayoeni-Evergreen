@@ -52,65 +52,56 @@ a:active {
   background-color: rgba(151, 199, 63, 0.78);
   color: #ffff;
   width: auto;
-  left: 1rem;
-  bottom: 3rem;
+  top: 0;
 }
 
 .form-group {
-  background-color: #97C73F; padding: 2rem; position: absolute; right: 8rem; bottom: auto; top: 0; height: auto;
+  box-sizing: content-box;
+  background-color: #97c73f;
+  padding: 2rem;
+  position: absolute;
+  right: 8rem;
+  bottom: auto;
+  top: 0;
+  height: auto;
 }
-.Kayoeni-cards {
-  display: flex;
-  height: 48rem;
+.cards-container {
+  /* display: flex;
+  height: 48rem; */
+  background-image: url(images/why-bg.png);
+  background-size: cover;
+  background-position: center;
 }
 
-.ready-title-deeds {
-  background-image: url(/images/Rectangle\ 5.png);
-  background-position: center;
-  text-align: center;
-  /* border: 1px black solid; */
-  /* height: 460px; */
-}
-
-.great-potential {
-  background-image: url(/images/Rectangle\ 8.png);
-  background-position: center;
-  text-align: center;
-  /* border: 1px black solid; */
-  /* height: 450px; */
-}
-
-.special-discount {
-  background-image: url(/images/Rectangle\ 7.png);
-  background-position: center;
-  text-align: center;
-  /* border: 1px black solid; */
-  /* height: 450px; */
-}
 .phase1 {
   /* border: 1px black solid; */
-  display: flex;
+  /* display: flex; */
 }
 
-
-.btn-grad {background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%)}
 .btn-grad {
-   margin: 10px;
-   padding: 15px 45px;
-   text-align: center;
-   text-transform: uppercase;
-   transition: 0.5s;
-   background-size: 200% auto;
-   color: white;            
-   box-shadow: 0 0 20px #eee;
-   /* border-radius: 10px; */
-   border: none;
-   display: block;
- }
+  background-image: linear-gradient(
+    to right,
+    #e52d27 0%,
+    #b31217 51%,
+    #e52d27 100%
+  );
+}
+.btn-grad {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  /* border-radius: 10px; */
+  border: none;
+  display: block;
+}
 
- .btn-grad:hover {
-   background-position: right center; /* change the direction of the change here */
-   color: #fff;
-   text-decoration: none;
- }
-
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}

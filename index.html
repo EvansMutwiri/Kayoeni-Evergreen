@@ -25,14 +25,15 @@
     <title>Kaoyeni Evergreen</title>
   </head>
   <body>
-    <div class="container container-fluid">
-      <!-- navigation bar -->
+    <!-- navigation bar -->
 
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-light"
-      >
-        <a class="navbar-brand" href="#"
-          ><img src="images/Kaoyeni Logo Website 1.svg" alt="kaoyeni-evergreen" style="position:absolute; top:0; left:0;"
+    <div class="container container-fluid" id="home" style="font-size: 18px">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand mb-5" href="#"
+          ><img
+            src="images/Kaoyeni Logo Website 1.svg"
+            alt="kaoyeni-evergreen"
+            style="position: absolute; top: 0; left: 0"
         /></a>
         <button
           class="navbar-toggler"
@@ -45,13 +46,18 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav float-md-end" style="font-size: 15px;">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul
+            class="navbar-nav float-md-end"
+            style="font-size: 15px; font-weight: bold"
+          >
             <li class="nav-item active">
-              <a class="nav-link" href="#"><span style="border-bottom: 3px solid #97c73f; padding-bottom: 3px;">Why Kayoeni Evergreen</span> <span class="sr-only">(current)</span></a
+              <a class="nav-link" href="#"
+                ><span
+                  style="border-bottom: 3px solid #97c73f; padding-bottom: 3px"
+                  >Why Kayoeni Evergreen</span
+                >
+                <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
@@ -77,61 +83,106 @@
       </nav>
       <!-- add bg image -->
 
-      <div class="header">
-        <div><img class="header-image" src="/images/header.png" alt="" /></div>
-        <div class="two-acre-plots">     
-          <p>
-            2 ACRE PLOTS FOR SALE <br>
-            <span style="position: absolute;" class="header-text">NEAR MALINDI AIRPORT</span>
+      <div class="header" style="color: #fff">
+        <div><img class="header-image" src="images/header.png" alt=""></div>
+        <div class="two-acre-plots" style="width: auto; height: auto">
+          <p style="font-weight: bolder">
+            2 ACRE PLOTS FOR SALE <br />
+            <span style="font-weight: lighter ">NEAR MALINDI AIRPORT</span>
           </p>
         </div>
 
         <!-- Contact form -->
 
-        <div class="form-group">
-          <form action="https://formsubmit.co/83c1218e73c5704e1ffd23e905dce8c7" method="POST">
-            <h1>KAOYENI<br>EVERGREEN</h1>
-            <label for="name">FULL NAMES</label> <br>
-            <input type="text" name="name" placeholder="Name" class="form-control" required> <br>
-            <label for="phone">PHONE NUMBER</label> <br><br>
-            <input type="text" name="phone" placeholder="Phone"class="form-control"><br>
-            <label for="email">EMAIL ADDRESS</label> <br>
-            <input type="email" name="email" placeholder="Email" class="form-control" required><br>
-            <button type="submit" style="color: #fff;"class="btn btn-primary btn-lg btn-block btn-grad" >GET NOTIFIED</button>
-       </form>  
-        </div>
+      <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="color: #fff; background-color: #97c73f; text-align: left;">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">KAOYENI <br> EVERGREEN</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
+      <div class="modal-body mx-3">
+        <form action="https://formsubmit.co/83c1218e73c5704e1ffd23e905dce8c7"
+        method="POST">
+          <div class="md-form mb-5">
+            <i class="fas fa-user prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="form34">FULL NAMES</label>
+            <input type="text" id="form34" class="form-control validate" name="Name" required>
+          </div>
+
+          <div class="md-form mb-5">
+            <i class="fas fa-user"></i>
+            <label data-error="wrong" data-success="right" for="form34">PHONE NUMBER</label>
+            <input type="text" id="form34" class="form-control validate" name="Number" required>
+          </div>
+  
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="form29">EMAIL ADDRESS</label>
+            <input type="email" id="form29" class="form-control validate" name="e-mail address" required>
+          </div>
+  
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button type="submit" class="btn btn-unique"onclick="window.location.href = 'index.html#;">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
+        </div>
+        </form>
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+  <a href="" class="btn btn-primary btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm" >Get Notified</a>
+</div>
 
       <!-- Why Kaoyeni Evergreen -->
 
-      <div class="cards-container">
-        <h1>Why Kaoyeni Evergreen</h1>
-        <div class="row Kayoeni-cards">
-          <div class="col-md-4 ready-title-deeds">
-            <h2>Ready Title Deeds</h2>
-            <a href="#">Learn More &#8594;</a>
-          </div>
-          <div class="col-md-4 great-potential">
-            <h2>
-              Great potential into <br />
-              further subdivision
-            </h2>
-            <a href="#">Learn More &#8594;</a>
-          </div>
-          <div class="col-md-4 special-discount">
-            <h2>
-              Special discount for <br />
-              Chamas/Saccos
-            </h2>
-            <a href="#">Learn More &#8594;</a>
-          </div>
+      <div class="cards-container mt 4">
+        <h1 class="why-kaoyeni-h" style="font-weight: bold; text-align: center">
+          Why Kaoyeni Evergreen
+        </h1>
+        <div class="col-md-4 ready-title-deeds">
+          <img
+            src="images/titledeeds.png"
+            alt=""
+            style="height: auto; max-width: 100%"
+          />
+          <h2>Ready Title Deeds</h2>
+          <a href="#">Learn More &#8594;</a>
+        </div>
+        <div class="col-md-4 great-potential">
+          <img
+            src="images/potential.png"
+            alt=""
+            style="height: auto; max-width: 100%"
+          />
+          <h2>
+            Great potential into <br />
+            further subdivision
+          </h2>
+          <a href="#">Learn More &#8594;</a>
+        </div>
+        <div class="col-md-4 special-discount">
+          <img
+            src="images/chamas.png"
+            alt=""
+            style="height: auto; max-width: 100%"
+          />
+          <h2>
+            Special discount for <br />
+            Chamas/Saccos
+          </h2>
+          <a href="#">Learn More &#8594;</a>
         </div>
       </div>
 
       <!-- site plan -->
 
-      <div class="site-plan">
-        <h1 class="site-plan">Site Plan</h1>
+      <div class="site-plan mt-2">
+        <h1 class="site-plan-h1">Site Plan</h1>
         <p>Unique 26 - 2 Acre residential plots near Malindi airport.</p>
         <img
           class="img-fluid"
@@ -142,22 +193,29 @@
 
       <!-- Pricing -->
 
-      <div class="pricing">
-        <h1>Pricing</h1>
+      <div class="pricing col-md-12">
+        <h1 style="text-align: center; font-weight: bold">Pricing</h1>
         <div class="phase1">
           <img
-            class="col-md-6 float-md-end mb-3 ms-md-3"
-            src="images/Site-plan.png" style="height: auto; width: 50%;"
-            alt="site-pricin"
+            class="col-md-6 float-md-start mb-3 ms-md-3"
+            src="images/Site-plan.png"
+            style="height: auto; max-width: 100%"
+            alt="site-pricing"
           />
-          <div class="pricingfloat">
-            <h2>Phase 1</h2>
-            <p>
-              First phase consist of plots A - G.<br />
-              2 acres for each plot. <br />
-              <span class="pricing-btn">KES 2.3M/ACRE</span>
-            </p>
-          </div>
+        </div>
+        <div class="pricingfloat col-md-3 align-self-center">
+          <h2>Phase 1</h2>
+          <p>
+            First phase consist of plots A - G.<br />
+            2 acres for each plot. <br />
+            <button
+              type="submit"
+              style="color: #fff"
+              class="btn btn-primary btn-lg btn-block btn-grad"
+            >
+              KES 2.3M/ACRE
+            </button>
+          </p>
         </div>
       </div>
 
@@ -292,8 +350,17 @@
 
       <!-- site footer -->
 
-      <div class="site-footer">
-        <div class="Ryden-International">
+      <div
+        class="
+          site-footer
+          d-md-flex
+          flex-md-row
+          justify-content-md-between
+          flex-md-fill
+        "
+        style="margin: auto; background-color: #97c73f"
+      >
+        <div class="Ryden-International" style="display: inline-block">
           <h3><strong>TALK TO US</strong></h3>
           <p>
             Ryden International Ltd <br />
@@ -315,10 +382,10 @@
         <div class="social">
           <h3><strong>FOLLOW US</strong></h3>
           <ul>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>LinkedIn</li>
-            <li>Twitter</li>
+            <li><i class="fa fa-facebook"></i>Facebook</li>
+            <li><i class="fa fa-instagram"></i>Instagram</li>
+            <li><i class="fa fa-linkedin"></i>LinkedIn</li>
+            <li><i class="fa fa-twitter"></i>Twitter</li>
           </ul>
         </div>
         <div class="viewing">
